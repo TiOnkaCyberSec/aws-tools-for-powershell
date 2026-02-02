@@ -1,61 +1,80 @@
-## AWS Tools for PowerShell
+# AWS Tools for PowerShell - Fork and Extensions
 
-The _AWS Tools for PowerShell_ lets developers and administrators manage their AWS services from the PowerShell scripting environment.
+This repository is a personal fork of the official [AWS Tools for PowerShell](https://github.com/aws/aws-tools-for-powershell) project maintained by Amazon Web Services (AWS).
 
-This repository is meant to be used as a way to collect feedback from users of the _AWS Tools for PowerShell_ modules. You are invited to create GitHub issues to report bugs or make feature requests.
+The original project provides PowerShell modules that allow developers and administrators to manage AWS service from the PowerShell scripting environment. 
 
-## AWS Tools for PowerShell Modules
+This fork is used for learning, experimentation, and extension, with a focus on practical automation, auditing, and hybrid-cloud administration scenarios.
 
-The _AWS Tools for PowerShell_ modules [AWS.Tools](https://www.powershellgallery.com/packages/AWS.Tools.Common), [AWSPowerShell.NetCore](https://www.powershellgallery.com/packages/AWSPowerShell.NetCore) and [AWSPowerShell](https://www.powershellgallery.com/packages/AWSPowerShell) are available from [PowerShell Gallery](https://www.powershellgallery.com/).
+---
 
+## Original Project Overview (Upstream)
 
-| Module | **Compatible PowerShell Versions** |  |
-|---|---|---|
-| **[AWS.Tools](https://www.powershellgallery.com/packages/AWS.Tools.Common)*** | 6+ (and 5.1 when .NET Framework 4.7.2 is installed) |
-| **[AWSPowerShell.NetCore](https://www.powershellgallery.com/packages/AWSPowerShell.NetCore)** | 6+ (and 3.0 - 5.1 when .NET Framework 4.7.2 is installed) |
-| **[AWSPowerShell](https://www.powershellgallery.com/packages/AWSPowerShell)** | 2.0 - 5.1 |
+The AWS Tools for PowerShell enable interaction with AWS services using PowerShell cmdlets. They are commonly used for infrastructure automation, administration, and operational tooling.
 
-*_AWS.Tools_ is the new modular variant of AWS Tools for PowerShell. In order to manage each AWS service, install from [PowerShell Gallery](https://www.powershellgallery.com/) the corresponding module (e.g. [AWS.Tools.EC2](https://www.powershellgallery.com/packages/AWS.Tools.EC2), [AWS.Tools.S3](https://www.powershellgallery.com/packages/AWS.Tools.S3)...).
+Feedback, issues, and feature requests for the upstream project should be directed to the original AWS repository.
 
-More details about _AWS.Tools_ can be found [here](https://github.com/aws/aws-tools-for-powershell/issues/67).
+Upstream repository:
+https;//github.com/aws/aws-tools-for-powershell
 
-The [AWS.Tools.Installer](https://www.powershellgallery.com/packages/AWS.Tools.Installer) module can be used to simplify installing, updating and removing the _AWS.Tools_ modules.
+---
 
-## Change Log
+## PowerShell Modules (Upstream)
 
-The change log for AWS Tools for PowerShell can be found in the [CHANGELOG.md](https://github.com/aws/aws-tools-for-powershell/blob/main/CHANGELOG.md) file.
+The following modules are published and maintained by AWS via the [PowerShell Gallery](https://www/powershellgallery.com/):
 
-The AWS Tools for PowerShell depends on the [AWS SDK for .NET](https://github.com/aws/aws-sdk-net), you can find the AWS SDK's changelog [here](https://github.com/aws/aws-sdk-net/blob/main/changelogs/SDK.CHANGELOG.ALL.md).
+|Module | Compatible PowerShell Versions |
+|------ | -----------------------------|
+|**AWS.Tools** | 6+ (and 5.1 with .NET Framework 4.7.2) |
+|**AWSPowerShell.NetCore** | 6 + (and 3.0-5.1 with .NET Framework 4.7.2) |
+|**AWSPowerShell** | 2.0-5.1 |
 
-## Maintenance and support for major versions
+**AWS.Tools** is the modular variant where each AWS service is installed independently (for example, `AWS.Tools.EC2`, `AWS.Tools.S3`).
 
-For information about maintenance and support for major versions and their underlying dependencies, see the following in the AWS SDKs and Tools Shared Configuration and Credentials Reference Guide:
+---
 
-* [AWS SDKs and Tools Maintenance Policy](https://docs.aws.amazon.com/credref/latest/refdocs/maint-policy.html)
-* [AWS SDKs and Tools Version Support Matrix](https://docs.aws.amazon.com/credref/latest/refdocs/version-support-matrix.html)
+## Additions and Modifications in This Fork
 
-## Additional Resources
+This fork includes non-breaking additions and documentation updates created by the repository owner, such as:
 
-[AWS Tools for PowerShell User Guide](https://docs.aws.amazon.com/powershell/latest/userguide/pstools-welcome.html)
+- Custom PowerShell examples demonstrating AWS automation use cases
+- IAM auditing and inspection scripts
+- Notes and documentation focused on security, governance, and cloud operations
+- Experimentation with extending AWS.Tools usage in real-world scenarios
 
-Check out this user guide to get started quickly.
+All original AWS code remains under its original license and attribution.
 
-[AWS Tools for PowerShell Cmdlet Reference](https://docs.aws.amazon.com/powershell/latest/reference/index.html)
+---
 
-Take a look at this reference for more in-depth documentation for each PowerShell cmdlet.
+## Example Use Cases Explored Here
 
-[AWS Developer Blog](https://aws.amazon.com/blogs/developer/category/programing-language/dot-net/)
+- Auditing AWS IAM users and attached policies
+- Automating common AWS administrative tasks via PowerShell
+- Supporting hybrid-cloud workflows (AWS + on-prem / other cloud platforms)
+- Learning and extending AWS SDK-based tooling
 
-Come see what .NET and PowerShell developers at AWS are up to! Learn about new software announcements, guides, and how-to's.
+---
 
-[@dotnetonaws](https://twitter.com/dotnetonaws)
+## Change Tracking
 
-Follow us on Twitter!
+For official AWS releases and changes, see the upstream changelog:
+-[CHANGE.LOG.md (Upstream)](https://github.com/aws/aws-tools-for-powershell/blob/main/CHANGELOG.md)
 
-## License
+This fork may contain additional commits that are not part of official AWS releases.
 
-The content of this repository is licensed under the Apache 2.0 License.
+---
 
-## Personal Exploration
+## Licensing and Attibution
 
-This repository is being reviewed to support PowerShell-based AWS Automation use cases such as IAM auditing, security reviews, and hybrid-cloud administration.
+- Original project copyright Amazon Web Services
+- Licensed under the Apache 2.0 License
+- This fork retains all original licensing and attribution requirements
+
+Modifications and additions in this fork are provided under the same license unless otherwise stated.
+
+---
+
+## Disclaimer
+
+This is not an official AWS repository.
+AWS does not provide support for changes introduced in this fork. 
