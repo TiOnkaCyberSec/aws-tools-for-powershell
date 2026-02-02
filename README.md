@@ -55,3 +55,7 @@ Follow us on Twitter!
 ## License
 
 The content of this repository is licensed under the Apache 2.0 License.
+
+## Personal Exploration
+
+This repository is being reviewed to support PowerShell-based AWS Automation use cases such as IAM auditing, security reviews, and hybrid-cloud administration.
